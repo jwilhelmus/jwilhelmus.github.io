@@ -147,6 +147,11 @@ p#bio {
  text-align: center;
 }
 
+#cv {
+	font-weight: bolder;
+	font-size: x-large;
+}
+
 .post {
     padding-bottom: 2em;
 		font-family:"Open Sans",sans serif; 
@@ -159,6 +164,10 @@ p#bio {
 		padding-top: 2.5%;
 }
 
+.avatar-social:hover {
+	transform: rotate(180deg);
+	opacity: 0.75;
+}
 .post-avatar {
 				border-radius: 50px;
 				float: left;
