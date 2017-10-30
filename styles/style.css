@@ -175,10 +175,10 @@ em {
 	background-color: #2cb394;
 }
 #btn {
-	border: solid #191919;
+	border: solid #f5f5f5;
 	border-width: 0 0.2em 0.2em 0;
 	margin-left: 45%;
-	margin-top: 15%;
+	margin-top: 0.8em;
 	display: inline-block;
 	padding: 0.5em;
 	transform: rotate(135deg);
@@ -187,10 +187,11 @@ em {
 
 #nav-btn {
 	border: 1px solid #191919;
-	margin-left: 80%;
+	width: 100%;
 	position: relative;
-	background-color: whitesmoke;
+	background-color: #191919;
 	top: 0%;
+	height: 3em;
 }
 #nav-btn:hover {
 	background-color: #2cb394;
