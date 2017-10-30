@@ -128,6 +128,23 @@ em {
     letter-spacing: 0.1em;
 }
 
+.blog-subhead {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 1px solid #eee;
+    padding: 0.4em 0;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+#home {
+	border-bottom: 1px dashed;
+	font-size: initial;
+}
+
 .content {
     padding: 1em 2em 2em 0em;
 		margin-left: 10%;
@@ -178,6 +195,7 @@ p#bio {
     font-size: 2em;
     color: #222;
     margin-bottom: 0.2em;
+		margin-top: 1em;
 }
 
 .post-main {
