@@ -1,0 +1,483 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(61, 146, 201);
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+pre {
+		border: 1px dashed rgb(61, 79, 93);
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+}
+
+html {
+	background: rgb(245,245,245);
+}
+
+.profil{
+	width: 50%;
+	border-radius: 0.8em;
+	display: block;
+	margin: auto;
+}
+.table {
+	margin: auto;
+	margin-top: 2em;
+	border-collapse: collapse;
+}
+	.table td {
+	text-align: center;
+	padding: 0.2em;
+	border-bottom: 1px solid gray;
+	border-right: 1px solid gray;
+	}
+
+caption {
+	text-align: left;
+	color: #DA0;
+}
+
+em {
+  
+}  
+
+.func {
+	color: #800080;
+}
+
+.codeR {
+  border: 1px dashed rgb(61, 79, 93);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  counter-reset: code;
+  background-color: #C0C0C0;
+  padding: .4em;
+  margin: auto;
+  line-height: 1.5em;
+  color: #202020;
+}
+.codeR span::before {
+  content: counter(code);
+  counter-increment: code;
+}
+.codeR span {
+ margin-right: 1em; 
+ margin-left: .5em; 
+ text-align: center;
+ color: white;
+ 
+}
+/* LAYOUT CSS */
+.pure-img-responsive {
+    max-width: 100%;
+		margin: auto;
+    height: auto;
+		padding-right: 0.2em;
+}
+
+.disclaimer {
+	border: solid 2px #478fce;
+	border-radius: 10px;
+	padding: 0.4em;
+	width: 100%;
+	text-align: center;
+}
+
+#layout {
+    padding: 0;
+		letter-spacing: 0;
+}
+
+.brand-title,
+.brand-tagline {
+		letter-spacing: 0.2em;
+    margin: 0;
+}
+.brand-title {
+		font-size: 2em;
+    text-transform: uppercase;
+}
+.brand-tagline {
+		font-size: 1.3em;
+    font-weight: 300;
+    color: rgb(176, 202, 219);
+}
+
+.content-subhead {
+    text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 1px solid #eee;
+    padding: 0.4em 0;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.content {
+    padding: 1em 2em 2em 0em;
+		margin-left: 10%;
+		margin-right: 5%;
+		height:100%;
+}
+
+a.social {
+ border: none;
+ margin: 0;
+ padding: 0;
+}
+
+p#bio {
+ color: white;
+ padding: 0% 10%;
+ text-align: center;
+}
+
+.post {
+    padding-bottom: 2em;
+		font-family:"Open Sans",sans serif; 
+		padding-top: 2em;
+}
+.avatar-social {
+		border-radius: 5%;
+		float: left;
+		margin-left: 15%;
+		padding-top: 2.5%;
+}
+
+.post-avatar {
+				border-radius: 50px;
+				float: left;
+				margin-right: 1em;
+				margin-top: 0.5em;
+}
+.post-title {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 0.2em;
+}
+
+.post-main {
+		padding-top: 1em;
+		letter-spacing: 0;
+		font-size: 1.2em;
+    color: #000;
+    line-height: 2em;
+		text-align: justify;
+}
+.post-description {
+    color: #444;
+    line-height: 1.8em;
+		text-transform: none;
+		letter-spacing: 0;
+		font-size: 1.5em;
+}
+.post-meta {
+    color: #999;
+    font-size: 90%;
+    margin: 0;
+}
+
+.post-category {
+    margin: 0 0.1em;
+    padding: 0.05em 0.5em;
+    color: #333;
+    background: #999;
+		font-size: 80%;
+		border-radius: 5px;
+		margin: 0 2.5px;
+}
+    .post-category-design {
+        background: #5aba59;
+    }
+    .post-category-pure {
+        background: #4d85d1;
+    }
+    .post-category-Misc {
+        background: #8156a7;
+    }
+    .post-category-R {
+        background: #df2d4f;
+    }
+
+.post-images {
+    margin: 1em 0;
+}
+.post-image-meta {
+    margin-top: -3.5em;
+    margin-left: 1em;
+    color: #fff;
+    text-shadow: 0 1px 1px #333;
+}
+
+.footer {
+		letter-spacing: 0em;
+    text-align: center;
+    padding: 1em 0;
+		position: fixed;
+		bottom: 0;
+}
+.footer a {
+    color: #ccc;
+    font-size: 80%;
+}
+.footer .pure-menu a:hover,
+.footer .pure-menu a:focus {
+    background: none;
+}
+
+/*
+This is the parent `<div>` that contains the menu and the content area.
+*/
+#layout {
+    position: relative;
+    padding-left: 0;
+}
+    #layout.active #menu {
+        left: 20em;
+        width: 150px;
+    }
+
+    #layout.active .menu-link {
+        left: 150px;
+    }
+
+/*
+The content `<div>` is where all your content goes.
+*/
+
+.header {
+     margin: 0;
+     color: #333;
+     text-align: center;
+     padding: 0 2em 0;
+     border-bottom: 1px solid #eee;
+ }
+    .header h1 {
+        margin: 0.2em 0;
+        font-size: 3em;
+        font-weight: 300;
+    }
+     .header h2 {
+        font-weight: 300;
+        color: #ccc;
+        padding: 0;
+        margin-top: 0;
+    }
+
+/*
+The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
+appears on the left side of the page.
+*/
+
+#menu {
+    margin-left: -20em; /* "#menu" width */
+    width: 20em;
+    position: fixed;
+    top: 0;
+    left: auto;
+    bottom: 0;
+    z-index: 1000; /* so the menu or its navicon stays above all content */
+    background: #191919;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+    /*
+    All anchors inside the menu should be styled like this.
+    #menu a {
+        color: #fff;
+				width: 80%;
+        border: 2px solid rgb(61,146,201);
+				margin: 0.5em;
+        padding: 0.6em 0 0.6em 0.6em;
+				text-transform: uppercase;
+				text-decoration: none;
+				text-align: center;
+    }
+
+    */
+    /*
+    Remove all background/borders, since we are applying them to #menu.
+    */
+		 #menu .pure-menu {
+			margin-top: 50%;
+		 }
+     #menu .pure-menu,
+     #menu .pure-menu ul {
+        border: none;
+        background: transparent;
+				list-style-type: none;
+    }
+
+
+    /*
+    Add that light border to separate items into groups.
+    */
+    #menu .pure-menu ul,
+    #menu .pure-menu .menu-item-divided {
+        border-top: 1px solid #333;
+    }
+        /*
+        Change color of the anchor links on hover/focus.
+        */
+        #menu .pure-menu li a:hover,
+        #menu .pure-menu li a:focus {
+            background: #333;
+        }
+
+    /*
+    This styles the selected menu item `<li>`.
+    */
+    #menu .pure-menu-selected,
+    #menu .pure-menu-heading {
+        background: #333;
+    }
+        /*
+        This styles a link within a selected menu item `<li>`.
+        */
+        #menu .pure-menu-selected a {
+            color: #fff;
+        }
+
+    /*
+    This styles the menu heading.
+    */
+    #menu .pure-menu-heading {
+				border: none;
+				background: #191919;
+        font-size: 110%;
+        color: #fff;
+        margin-left: auto;
+				text-align: left;
+    }
+
+/* -- Dynamic Button For Responsive Menu -------------------------------------*/
+
+/*
+The button to open/close the Menu is custom-made and not part of Pure. Here's
+how it works:
+*/
+
+/*
+`.menu-link` represents the responsive menu toggle that shows/hides on
+small screens.
+*/
+.menu-link {
+    position: fixed;
+    display: block; /* show this only on small screens */
+    top: 0;
+    left: 0; /* "#menu width" */
+		border-radius: 0.5em;
+    background: #000;
+    background: rgba(0,0,0,0.7);
+    font-size: 10px; /* change this value to increase/decrease button size */
+    z-index: 10;
+    width: 2em;
+    height: auto;
+    padding: 2.1em 1.6em;
+}
+
+    .menu-link:hover {
+        background: #000;
+				border-radius: 0.5em;
+    }
+
+    .menu-link span {
+        position: relative;
+        display: block;
+    }
+
+		.menu-link span:after,
+		.menu-link span:before {
+						position: absolute;
+						margin-top: -1.2em;
+						margin-left: -1em;
+						background-color: #7c7c7c;
+						content: ' ';
+						width: 2em;
+						height: 0.6em;
+		}
+		.menu-link span:after {
+			margin-top: 0.4em;
+		}
+/*
+    .menu-link span,
+    .menu-link span:before,
+    .menu-link span:after {
+        background-color: #000;
+        width: 100%;
+        height: 2px;
+    }
+        .menu-link span::before,
+        .menu-link span::after {
+            position: absolute;
+            margin-top: -0.6em;
+            content: " ";
+        }
+
+        .menu-link span:after {
+            margin-top: 0.6em;
+        }
+
+*/
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+
+/*
+Hides the menu at `48em`, but modify this based on your app's needs.
+*/
+@media (min-width: 65em) {
+
+    .header,
+    .content {
+        /*padding-left: 2em;
+        */
+		padding-right: 2em;
+    }
+
+    #layout {
+        padding-left: 20em; /* left col width "#menu" */
+        left: 0;
+    }
+    #menu {
+        left: 20em;
+    }
+
+    .menu-link {
+        position: fixed;
+        left: 20em;
+        display: none;
+    }
+
+    #layout.active .menu-link	{
+        left: 20em;
+				border: none;
+    }
+
+}
+
+@media (max-width: 65em) {
+    /* Only apply this when the window is small. Otherwise, the following
+    case results in extra padding on the left:
+        * Make the window small.
+        * Tap the menu to trigger the active state.
+        * Make the window large again.
+    */
+    #layout.active {
+        position: relative;
+        left: 20em;
+    }
+}
