@@ -98,10 +98,7 @@ em {
 	text-align: center;
 }
 
-#layout {
-    padding: 0;
-		letter-spacing: 0;
-}
+
 
 .brand-title,
 .brand-tagline {
@@ -131,11 +128,12 @@ em {
 .blog-subhead {
 		position: absolute;
 		top: 0;
-		width: 100%;
+		width: 85%;
 		text-transform: uppercase;
     color: #aaa;
     border-bottom: 1px solid #eee;
     padding: 0.4em 0;
+		padding-left: 6%;
     font-size: 80%;
     font-weight: 500;
     letter-spacing: 0.1em;
@@ -317,8 +315,11 @@ p#bio {
 This is the parent `<div>` that contains the menu and the content area.
 */
 #layout {
-    position: relative;
-    padding-left: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+    padding: 0;
+		letter-spacing: 0;
 }
     #layout.active #menu {
         left: 20em;
