@@ -445,68 +445,7 @@ The button to open/close the Menu is custom-made and not part of Pure. Here's
 how it works:
 */
 
-/*
-`.menu-link` represents the responsive menu toggle that shows/hides on
-small screens.
-*/
-.menu-link {
-    position: fixed;
-    display: block; /* show this only on small screens */
-    top: 0;
-    left: 0; /* "#menu width" */
-		border-radius: 0.5em;
-    background: #000;
-    background: rgba(0,0,0,0.7);
-    font-size: 10px; /* change this value to increase/decrease button size */
-    z-index: 10;
-    width: 2em;
-    height: auto;
-    padding: 2.1em 1.6em;
-}
 
-    .menu-link:hover {
-        background: #000;
-				border-radius: 0.5em;
-    }
-
-    .menu-link span {
-        position: relative;
-        display: block;
-    }
-
-		.menu-link span:after,
-		.menu-link span:before {
-						position: absolute;
-						margin-top: -1.2em;
-						margin-left: -1em;
-						background-color: #7c7c7c;
-						content: ' ';
-						width: 2em;
-						height: 0.6em;
-		}
-		.menu-link span:after {
-			margin-top: 0.4em;
-		}
-/*
-    .menu-link span,
-    .menu-link span:before,
-    .menu-link span:after {
-        background-color: #000;
-        width: 100%;
-        height: 2px;
-    }
-        .menu-link span::before,
-        .menu-link span::after {
-            position: absolute;
-            margin-top: -0.6em;
-            content: " ";
-        }
-
-        .menu-link span:after {
-            margin-top: 0.6em;
-        }
-
-*/
 /* -- Responsive Styles (Media Queries) ------------------------------------- */
 
 /*
@@ -553,4 +492,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         position: relative;
         left: 20em;
     }
+		.content {
+				margin-top: 5%;
+		}
 }
